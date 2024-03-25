@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+        - name : i want to install my java in my system
+          apt:
+            - name: openjdk-8-jre
+              state: present
+          
