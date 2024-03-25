@@ -5,4 +5,4 @@
           - name: i want to install openjdk-8-jre in ansbile node
             apt:
                     name: openjdk-8-jre
-                    state: absent
+                    state: present
