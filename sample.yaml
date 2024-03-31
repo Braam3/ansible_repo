@@ -11,6 +11,6 @@
           - name: i want to install redhat in ansbile node
             yum:
                     name: httpd
-                    state: absent
+                    state: present
             when: ansible_os_family == "RedHat"
 
