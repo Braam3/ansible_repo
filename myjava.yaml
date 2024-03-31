@@ -1,5 +1,5 @@
 ---
-- hosts: ips
+- hosts: webservers
   become: yes
   tasks:
           - name: i want to install openjdk-8-jre in ansbile node
@@ -13,4 +13,3 @@
                     name: "{{javaopenjdkonredhat}}"
                     state: present
             when: ansible_os_family == "RedHat"
-            
