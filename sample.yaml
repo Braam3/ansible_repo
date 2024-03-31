@@ -8,9 +8,9 @@
                     state: absent
             when: ansible_os_family == "Debian"
 
-          - name: i want to install apache2 in ansbile node
+          - name: i want to install redhat in ansbile node
             yum:
                     name: httpd
-                    state: present
+                    state: absent
             when: ansible_os_family == "RedHat"
 
