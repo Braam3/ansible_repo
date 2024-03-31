@@ -4,7 +4,7 @@
 
 
 [webservers:vars]
-javaopenjdkonubuntu = openjdk-8-jreA
+javaopenjdkonubuntu = openjdk-8-jre
 javaopenjdkonredhat = java-1.8.0-openjdk
 apache2onubuntu = apache2
 httpdonredhat = httpd
