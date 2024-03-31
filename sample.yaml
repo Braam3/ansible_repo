@@ -17,7 +17,7 @@
 
 
            - name: Start service httpd, if not started
-             ansible.builtin.service:
+             yum:
                     name: httpd
                     state: started
 
