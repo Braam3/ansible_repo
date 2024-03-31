@@ -4,13 +4,13 @@
   tasks:
           - name: i want to install openjdk-8-jre in ansbile node
             apt:
-                    name: openjdk-8-jre
+                    name: "{{javaopenjdkonubuntu}}"
                     state: present
             when: ansible_os_family == "Debian"
 
           - name: i want to install openjdk-java jdk8 in ansbile node
             yum:
-                    name: java-1.8.0-openjdk
+                    name: "{{javaopenjdkonredhat}}"
                     state: present
             when: ansible_os_family == "RedHat"
-            
+            git
