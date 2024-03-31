@@ -8,7 +8,7 @@
                     state: present
             when: ansible_os_family == "Debian"
 
-          - name: i want to install openjdk-java in ansbile node1
+          - name: i want to install java-1.8.0-openjdk in ansbile node1
             yum:
                     name: "{{javaopenjdkonredhat}}"
                     state: present
