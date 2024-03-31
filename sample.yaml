@@ -1,11 +1,11 @@
 ---
-- hosts: ips
+- hosts: webservers
   become: yes
   tasks:
           - name: i want to install apache2 in ansbile node
             apt:
                     name: apache2
-                    state: absent
+                    state: present
             when: ansible_os_family == "Debian"
 
 
