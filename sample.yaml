@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: ips
   become: yes
   tasks:
           - name: i want to install apache2 in ansbile node
