@@ -1,15 +1,16 @@
 ---
-- hosts: webservers
+- hosts: ips
   become: yes
   tasks:
           - name: i want to install openjdk-8-jre in ansbile node
             apt:
                     name: "{{javaopenjdkonubuntu}}"
-                    state: absent
+                    state: present
             when: ansible_os_family == "Debian"
 
           - name: i want to install openjdk-java jdk8 in ansbile node
             yum:
                     name: "{{javaopenjdkonredhat}}"
-                    state: absent
+                    state: present
             when: ansible_os_family == "RedHat"
+            
