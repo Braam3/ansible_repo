@@ -8,9 +8,16 @@
                     state: absent
             when: ansible_os_family == "Debian"
 
+
           - name: i want to install redhat in ansbile node
             yum:
                     name: httpd
                     state: present
             when: ansible_os_family == "RedHat"
+
+
+           - name: Start service httpd, if not started
+             ansible.builtin.service:
+                    name: httpd
+                    state: started
 
