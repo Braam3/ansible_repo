@@ -2,8 +2,8 @@
 - hosts: webserver
   become: yes
   tasks:
-  
-      - name: i want to install java jdk8 on ubuntu server
+
+      - name: Play to install Java JDK
         apt:
             name: "{{javaopenjdk8onubuntu}}"
             state: present
